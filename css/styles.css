@@ -1,0 +1,57 @@
+body {
+  background-color: #f6fbf4;
+}
+
+#header_title {
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px;
+}
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 85%;
+  justify-content: center;
+}
+
+.display_image {
+  width: 400px;
+  height: 400px;
+  padding: 25px;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-radius: 10%;
+}
+
+.display_image:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: -310px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  border-radius: 15px;
+  opacity: 0.5;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
